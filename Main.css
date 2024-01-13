@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+p{
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    text-indent: 20px;
+    font-size: smaller;
+    background-color: black;
+    color: whitesmoke;
+}
+p span{
+    background-color: #ffeba7;
+    color: #1f2029;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    gap: 2rem;
+}
+
+.T:hover{
+    transition-duration: 1s;
+    color: red;
+    font-size: larger;
+}
+.R:hover{
+    transition-duration: 1s;
+    color: red;
+    font-size: larger;
+}
+.P:hover{
+    transition-duration: 1s;
+    color: red;
+    font-size: larger;
+}
+
+.bar {
+width: 1.9rem;
+height: 1.5px;
+border-radius: 2px;
+background-color: #eee;
+transition: 0.5s;
+position: relative;        
+}
+
+.bar::before, .bar::after {
+ content: "";
+ position: absolute;
+ width: inherit;
+ height: inherit;
+ background-color: #eee;
+ transition: 0.5s;
+}
+
+.bar::before {
+transform: translateY(-9px);  
+}
+
+.bar::after {
+transform: translateY(9px);
+}
+
+img{
+    position: relative;
+    height: 60px;
+    width: fit-content;
+}
+
+img:hover{
+        cursor: none; 
+}
+
+li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav .brand {
+    color: #fff;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+nav .brand:hover {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+    height: 472px;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.banner .text {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.watches {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.watch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.watch:hover{
+    cursor: pointer;
+}
+
+.watch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.watch .title {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.watch .price {
+    color: #555;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+strike{
+    font-size: smaller;
+}
